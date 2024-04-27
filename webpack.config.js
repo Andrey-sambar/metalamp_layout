@@ -12,4 +12,9 @@ module.exports = {
     watchFiles: path.join(__dirname, 'src'),
     port: 9000,
   },
+  entry: path.join(__dirname, 'src', 'index.js'),
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'index.[contenthash].js',
+  },
 };
