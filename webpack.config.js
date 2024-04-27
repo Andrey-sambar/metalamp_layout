@@ -1,13 +1,9 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const PugPlugin = require('pug-plugin');
 const path = require('path');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = {
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src', 'template.html'),
-      filename: 'index.html',
-    }),
     new FileManagerPlugin({
       events: {
         onStart: {
@@ -15,15 +11,24 @@ module.exports = {
         },
       },
     }),
+    new PugPlugin({
+      entry: {
+        // define many page templates here
+        index: 'src/index.pug', // => dist/index.html
+      },
+      js: {
+        // JS output filename
+        filename: 'js/[name].[contenthash:8].js',
+      },
+      css: {
+        // CSS output filename
+        filename: 'css/[name].[contenthash:8].css',
+      },
+    }),
   ],
   devServer: {
     watchFiles: path.join(__dirname, 'src'),
     port: 9000,
-  },
-  entry: path.join(__dirname, 'src', 'index.js'),
-  output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'index.[contenthash].js',
   },
   module: {
     rules: [
