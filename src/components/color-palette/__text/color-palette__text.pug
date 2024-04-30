@@ -1,7 +1,7 @@
 include ../__title/color-palette__title
 include ../__subtitle/color-palette__subtitle
 
-mixin text(arg)
+mixin text(title, subtitle)
   .color-palette__text
-    +title(arg.title)
-    +subtitle(arg.subtitle)
+    +title(title)
+    +subtitle(subtitle)

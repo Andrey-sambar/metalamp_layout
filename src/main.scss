@@ -1,4 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @import "./components/color-palette/color-palette.scss";
+@import "./components/colors-type-container/colors-type-container.scss";
 
 h1 {
     color: red;
