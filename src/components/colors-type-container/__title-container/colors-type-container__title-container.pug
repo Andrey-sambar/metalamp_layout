@@ -1,0 +1,20 @@
+include /src/bemto/bemto
+include ../../title-format/title-format
+
+.colors-type-container__title-container
+  +title-format()
+    +e.title H1 
+    +e.text This one is the sub-section or widget title
+
+  +title-format()
+    +e.title H2 
+    +e.text Next one is the item title inside widgets
+
+  +title-format()
+    +e.title H3 
+    +e.text This is a label or CTA text
+
+  +title-format()
+    +e.title body 
+    +e.text This is the body text which is used for most of the design, like paragraphs, lists, etc.
+  
