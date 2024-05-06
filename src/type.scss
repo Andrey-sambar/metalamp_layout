@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import "fonts.scss";
+
+$custom-font-h1: 700 24px 'Montserrat', sans-serif;
+$custom-font-h2: 700 19px 'Montserrat', sans-serif;
+$custom-font-h3: small-caps 700 12px 'Montserrat', sans-serif;
+$custom-font-body: 400 14px/1.71 'Montserrat', sans-serif;
+
+$custom-color-dark-shade-100: #1f2041;
+$custom-color-dark-shade-75: rgba(31, 32, 65, 0.75);
+$custom-color-dark-shade-50: rgba(31, 32, 65, 0.5);
+$custom-color-dark-shade-25: rgba(31, 32, 65, 0.25);
+$custom-color-dark-shade-5: rgba(31, 32, 65, 0.05);
+$custom-color-purple: #bc9cff;
+$custom-color-green: #6fcf97;
+
+body {
+  //font-family: 'Montserrat';
+  //font-weight: 400;
+  //font-style: normal;
+  font: $custom-font-body
+}
+
+.ct-body {
+
+  // .ct-body__container
+
+  &__container {
+    display: flex;
+    //justify-content: space-between;
+    margin: 145px 158px 145px 150px;
+  }
+
+  // .ct-body__color-cont
+
+  &__color-cont {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__colors-kit {
+    margin-right: 415px;
+  }
+  // .ct-body__type-cont
+
+  &__types-kit {
+    
+  }
+}
+.color-block {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+
+  &_color_dark-shade-100 {
+    background-color: $custom-color-dark-shade-100;
+  }
+
+  &_color_dark-shade-75 {
+    background-color: $custom-color-dark-shade-75;
+  }
+
+  &_color_dark-shade-50 {
+    background-color: $custom-color-dark-shade-50;
+  }
+
+  &_color_dark-shade-25 {
+    background-color: $custom-color-dark-shade-25;
+  }
+
+  &_color_dark-shade-5 {
+    background-color: $custom-color-dark-shade-5;
+  }
+
+  &_color_purple {
+    background-color: $custom-color-purple;
+  }
+
+  &_color_green {
+    background-color: $custom-color-green;
+  }
+
+  &_shadow {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+}
+.type-block {
+  margin-left: 40px;
+  // .type-block__title
+
+  &__title {
+    font: $custom-font-h2;
+    line-height: 146%;
+  }
+
+  // .type-block__subtitle
+
+  &__subtitle {
+    font: $custom-font-h2;
+    line-height: 146%;
+    font-weight: 400;
+  }
+}
+
+.type-item {
+  display: flex;
+
+  &__tag {
+    font: $custom-font-h1;
+    font-weight: 400;
+    color: $custom-color-dark-shade-25;
+    margin-right: 30px;
+  }
+
+  &__text {
+    font: $custom-font-h1;
+  }
+}
