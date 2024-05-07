@@ -7,7 +7,7 @@
 
 $custom-font-h1: 700 24px 'Montserrat', sans-serif;
 $custom-font-h2: 700 19px 'Montserrat', sans-serif;
-$custom-font-h3: small-caps 700 12px 'Montserrat', sans-serif;
+$custom-font-h3: 700 12px 'Montserrat', sans-serif;
 $custom-font-body: 400 14px/1.71 'Montserrat', sans-serif;
 
 $custom-color-dark-shade-100: #1f2041;
@@ -25,17 +25,20 @@ body {
   font: $custom-font-body
 }
 
-.ct-body {
+// -----------------------------------------------
 
-  // .ct-body__container
+.ct-body {
 
   &__container {
     display: flex;
-    //justify-content: space-between;
+    justify-content: flex-start;
     margin: 145px 158px 145px 150px;
   }
 
-  // .ct-body__color-cont
+  &__colors-kit {
+   margin-right: 415px;
+   min-width: 282px;
+  }
 
   &__color-cont {
     display: flex;
@@ -43,82 +46,109 @@ body {
     margin-bottom: 20px;
   }
 
-  &__colors-kit {
-    margin-right: 415px;
-  }
-  // .ct-body__type-cont
+  &__color-block {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
 
-  &__types-kit {
-    
-  }
-}
-.color-block {
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
-
-  &_color_dark-shade-100 {
-    background-color: $custom-color-dark-shade-100;
-  }
-
-  &_color_dark-shade-75 {
-    background-color: $custom-color-dark-shade-75;
-  }
-
-  &_color_dark-shade-50 {
-    background-color: $custom-color-dark-shade-50;
-  }
-
-  &_color_dark-shade-25 {
-    background-color: $custom-color-dark-shade-25;
-  }
-
-  &_color_dark-shade-5 {
-    background-color: $custom-color-dark-shade-5;
-  }
-
-  &_color_purple {
-    background-color: $custom-color-purple;
-  }
-
-  &_color_green {
-    background-color: $custom-color-green;
+    &_color_dark-shade-100 {
+      background-color: $custom-color-dark-shade-100;
+    }
+  
+    &_color_dark-shade-75 {
+      background-color: $custom-color-dark-shade-75;
+    }
+  
+    &_color_dark-shade-50 {
+      background-color: $custom-color-dark-shade-50;
+    }
+  
+    &_color_dark-shade-25 {
+      background-color: $custom-color-dark-shade-25;
+    }
+  
+    &_color_dark-shade-5 {
+      background-color: $custom-color-dark-shade-5;
+    }
+  
+    &_color_purple {
+      background-color: $custom-color-purple;
+    }
+  
+    &_color_green {
+      background-color: $custom-color-green;
+    }
+  
+    &_shadow {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
   }
 
-  &_shadow {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  &__type-block {
+    margin-left: 40px;
   }
-
-}
-.type-block {
-  margin-left: 40px;
-  // .type-block__title
 
   &__title {
     font: $custom-font-h2;
     line-height: 146%;
   }
 
-  // .type-block__subtitle
-
   &__subtitle {
     font: $custom-font-h2;
     line-height: 146%;
     font-weight: 400;
   }
-}
 
-.type-item {
-  display: flex;
+  &__types-kit {
+    //display: grid;
+    //grid-template-columns: auto 369px;
+    //grid-template-rows: auto auto auto auto;
+    width: 436px;
+  }
+
+  &__title-block {
+    display: flex;
+    margin-bottom: 51px;
+  }
+
+  &__text-size-h1 {
+    font: $custom-font-h1;
+  }
+
+  &__text-size-h2 {
+    font: $custom-font-h2;
+  }
+
+  &__text-size-h3 {
+    font: $custom-font-h3;
+  }
+
+  &__text-size-body {
+    font: $custom-font-body;
+  }
 
   &__tag {
-    font: $custom-font-h1;
-    font-weight: 400;
     color: $custom-color-dark-shade-25;
+    min-width: 37px;
     margin-right: 30px;
+    text-align: right;
+    font-weight: 400;
+    //text-transform: uppercase;
+    //height: 60px;
+    //box-sizing: content-box;
+
+    
   }
 
   &__text {
-    font: $custom-font-h1;
+    color: $custom-color-dark-shade-100;
+    //height: auto;
+    //height: 60px;
+    //box-sizing: content-box;
+    //font: $custom-font-h1;
+
+    &_uppercase {
+      text-transform: uppercase;
+    }
   }
 }
