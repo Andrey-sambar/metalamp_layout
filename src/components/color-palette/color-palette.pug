@@ -1,9 +1,0 @@
-include __text/color-palette__text
-include __color-box/color-palette__color-box
-
-mixin color-palette(title, subtitle, color, shadow)
-  - var className = "color-palette__color-box" + color + shadow
-  div(class="color-palette colors-type-container__color-palette-position")
-    +color-box(className)
-    +text(title, subtitle)
-    
