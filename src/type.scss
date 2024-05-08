@@ -4,6 +4,7 @@
 }
 
 @import "fonts.scss";
+@import "/src/common.blocks/logo-colorless/logo-colorless.scss";
 
 $custom-font-h1: 700 24px 'Montserrat', sans-serif;
 $custom-font-h2: 700 19px 'Montserrat', sans-serif;
@@ -153,10 +154,3 @@ body {
   }
 }
 
-.logo-colorless {
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  width: 48px;
-  height: 48px;
-}
