@@ -16,49 +16,17 @@
 
   @import "/src/common.blocks/ct-body/__types-kit/ct-body__types-kit.scss";
 
-  &__title-block {
-    display: flex;
-    margin-bottom: 51px;
-  }
+  @import "/src/common.blocks/ct-body/__title-block/ct-body__title-block.scss";
 
-  &__text-size-h1 {
-    font: $custom-font-h1;
-  }
+  @import "/src/common.blocks/ct-body/__text-size-h1/ct-body__text-size-h1.scss";
 
-  &__text-size-h2 {
-    font: $custom-font-h2;
-  }
+  @import "/src/common.blocks/ct-body/__text-size-h2/ct-body__text-size-h2.scss";
 
-  &__text-size-h3 {
-    font: $custom-font-h3;
-  }
+  @import "/src/common.blocks/ct-body/__text-size-h3/ct-body__text-size-h3.scss";
 
-  &__text-size-body {
-    font: $custom-font-body;
-  }
+  @import "/src/common.blocks/ct-body/__text-size-body/ct-body__text-size-body.scss";
 
-  &__tag {
-    color: $custom-color-dark-shade-25;
-    min-width: 37px;
-    margin-right: 30px;
-    text-align: right;
-    font-weight: 400;
-    //text-transform: uppercase;
-    //height: 60px;
-    //box-sizing: content-box;
+  @import "/src/common.blocks/ct-body/__tag/ct-body__tag.scss";
 
-    
-  }
-
-  &__text {
-    color: $custom-color-dark-shade-100;
-    //height: auto;
-    //height: 60px;
-    //box-sizing: content-box;
-    //font: $custom-font-h1;
-
-    &_uppercase {
-      text-transform: uppercase;
-    }
-  }
+  @import "/src/common.blocks/ct-body/__text/ct-body__text.scss";
 }

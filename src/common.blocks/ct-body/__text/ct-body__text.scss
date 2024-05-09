@@ -1,0 +1,9 @@
+&__text {
+  color: $custom-color-dark-shade-100;
+  //height: auto;
+  //height: 60px;
+  //box-sizing: content-box;
+  //font: $custom-font-h1;
+
+  @import "/src/common.blocks/ct-body/__text/_uppercase/ct-body__text_uppercase.scss";
+}
