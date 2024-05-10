@@ -1,0 +1,21 @@
+.fe-body {
+  margin: 100px 20px;
+  @import "/src/common.blocks/fe-body/__logo-colorless/fe-body__logo-colorless.scss";
+
+}
+
+.input {
+  border: 1px solid $custom-color-dark-shade-25;
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+
+  &:hover {
+    border: 1px solid $custom-color-dark-shade-50;
+  }
+
+  &:focus {
+    border: 1px solid $custom-color-dark-shade-50;
+    outline: none;
+  }
+}
