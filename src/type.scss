@@ -6,18 +6,7 @@
 @import "fonts.scss";
 @import "/src/common.blocks/logo-colorless/logo-colorless.scss";
 
-$custom-font-h1: 700 24px 'Montserrat', sans-serif;
-$custom-font-h2: 700 19px 'Montserrat', sans-serif;
-$custom-font-h3: 700 12px 'Montserrat', sans-serif;
-$custom-font-body: 400 14px/1.71 'Montserrat', sans-serif;
-
-$custom-color-dark-shade-100: #1f2041;
-$custom-color-dark-shade-75: rgba(31, 32, 65, 0.75);
-$custom-color-dark-shade-50: rgba(31, 32, 65, 0.5);
-$custom-color-dark-shade-25: rgba(31, 32, 65, 0.25);
-$custom-color-dark-shade-5: rgba(31, 32, 65, 0.05);
-$custom-color-purple: #bc9cff;
-$custom-color-green: #6fcf97;
+@import "/src/variables.scss";
 
 body {
   //font-family: 'Montserrat';

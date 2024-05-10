@@ -1,13 +1,25 @@
 include bemto/bemto
 
+doctype html
 html
   head
     link(href="type.scss" rel="stylesheet")
+    style.
+
+      a {
+        color: red;
+      }
+
+      h2 {
+        margin-left: 30px;
+        margin-top: 30px;
+      }
   body
     //- h1 Hello World!
     //- include h2.pug
     //- img(src="logo.jpg")
     //- include components/colors-type-container/colors-type-container
     //- include /src/common.blocks/ct-body/ct-body
-    a(href="/colors_type.html") colors and type
+    h2
+      a(href="/colors_type.html") colors and type
     
