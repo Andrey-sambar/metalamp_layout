@@ -1,3 +1,6 @@
 .text-body {
   font: $custom-font-body;
+  color: $custom-color-dark-shade-75;
+
+  @import "/src/common.blocks/text-body/_gray/text-body_gray.scss";
 }

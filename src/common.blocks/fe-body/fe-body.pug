@@ -11,6 +11,13 @@ include /src/common.blocks/logo-colorless/logo-colorless
         +e.H3.title.title-h3 Text Field
         +b.INPUT(type="text", value="This is pretty awesome").input.text-body.input__hover
       +b.input-with-title.__input-with-title
-        +e.H3.title.title-h3 Dropdown
+        +e.H3.title.title-h3 dropdown
         +e.input-dropdown
-          +b.INPUT(type="button", value="Сколько гостей").input.text-body
+          +b.INPUT(type="button", value="Сколько гостей").input_cursor.text-body
+      +b.input-with-title.__input-with-title
+        +e.H3.title.title-h3 masked text field
+          +b.INPUT(type="text", placeholder="ДД.ММ.ГГГГ").input.text-body
+      +b.input-with-title.__input-with-title
+        +e.H3.title.title-h3 date dropdown
+        +e.input-dropdown
+          +b.INPUT(type="button", value="ДД.ММ.ГГГГ").input_cursor.text-body

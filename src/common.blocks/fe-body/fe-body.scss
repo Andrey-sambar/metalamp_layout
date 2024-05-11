@@ -22,6 +22,10 @@
   background-color: transparent;
   display: block;
 
+  &_cursor {
+    cursor: pointer;
+  }
+
   &:hover {
     border: 1px solid $custom-color-dark-shade-50;
   }
@@ -29,6 +33,10 @@
   &:focus {
     border: 1px solid $custom-color-dark-shade-50;
     outline: none;
+  }
+
+  &::placeholder {
+    color: $custom-color-dark-shade-25;
   }
 
   &__hover {
@@ -52,12 +60,14 @@
     &::after {
       content: "";
       position: absolute;
-      //background-image: url('/img/expand_more.svg');
-      background-color: red;
-      width: 20px;
-      height: 20px;
+      background-image: url('/img/expand_more.svg');
+     // background-color: red;
+      width: 24px;
+      height: 24px;
       top: 50%;
-      right: 15px;
+      left: 285px;
+      transform: translateY(-50%);
+      pointer-events: none;
     }
   }
 }
