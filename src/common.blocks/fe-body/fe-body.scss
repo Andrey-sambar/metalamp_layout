@@ -1,7 +1,14 @@
 .fe-body {
-  margin: 100px 20px;
+  // margin: 100px 20px;
   @import "/src/common.blocks/fe-body/__logo-colorless/fe-body__logo-colorless.scss";
 
+  &__container {
+    margin: 143px 140px;
+  }
+
+  @import "/src/common.blocks/fe-body/__input-with-title/fe-body__input-with-title.scss";
+
+  
 }
 
 .input {
@@ -9,6 +16,11 @@
   border-radius: 4px;
   width: 320px;
   height: 44px;
+  margin-top: 5px;
+  text-indent: 15px;
+  text-align: left;
+  background-color: transparent;
+  display: block;
 
   &:hover {
     border: 1px solid $custom-color-dark-shade-50;
@@ -17,5 +29,35 @@
   &:focus {
     border: 1px solid $custom-color-dark-shade-50;
     outline: none;
+  }
+
+  &__hover {
+    border: 1px solid $custom-color-dark-shade-50;
+  }
+}
+
+
+
+
+.input-with-title {
+  
+
+  &__title {
+    font: $custom-font-h3;
+  }
+  
+  &__input-dropdown {
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      //background-image: url('/img/expand_more.svg');
+      background-color: red;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      right: 15px;
+    }
   }
 }

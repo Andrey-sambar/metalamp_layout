@@ -1,7 +1,16 @@
 include /src/common.blocks/logo-colorless/logo-colorless
 
 +b.fe-body
-  +logo-colorless.__logo-colorless
-  +b.input-with-title
-    +e.H3.title Text Field
-    +b.INPUT(type="email", placeholder="email").input
+  +e.container 
+    +e.column1
+      +logo-colorless.__logo-colorless
+      +b.input-with-title
+        +e.H3.title.title-h3 Text Field
+        +b.INPUT(type="email", placeholder="Email").input.text-body
+      +b.input-with-title.__input-with-title
+        +e.H3.title.title-h3 Text Field
+        +b.INPUT(type="text", value="This is pretty awesome").input.text-body.input__hover
+      +b.input-with-title.__input-with-title
+        +e.H3.title.title-h3 Dropdown
+        +e.input-dropdown
+          +b.INPUT(type="button", value="Сколько гостей").input.text-body
