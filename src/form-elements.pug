@@ -5,5 +5,9 @@ html
   head 
     title Form Elements
     link(href="main.scss" rel="stylesheet")
+    script(src="../node_modules/jquery/dist/jquery.js")
+    script(src="../library/jquery.maskedinput.js")
   body
     include /src/common.blocks/fe-body/fe-body
+    script 
+      include /src/js/masked-text.js
