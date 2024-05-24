@@ -16,8 +16,13 @@ include /src/common.blocks/logo-colorless/logo-colorless
           +b.INPUT(type="button", value="Сколько гостей").input_cursor.text-body
       +b.input-with-title.__input-with-title
         +e.H3.title.title-h3 masked text field
-          +b.INPUT(type="text", placeholder="ДД.ММ.ГГГГ").input_masked.text-body
-      +b.input-with-title.__input-with-title
-        +e.H3.title.title-h3 date dropdown
-        +e.input-dropdown
-          +b.INPUT(type="button", value="ДД.ММ.ГГГГ").input_cursor.text-body
+          +b.INPUT(type="text", placeholder="ДД.ММ.ГГГГ").input.text-body
+      +e.dropdown-container
+        +b.input-with-title.__input-with-title
+          +e.H3.title.title-h3 date dropdown
+          +e.input-dropdown._size_mid
+            +b.INPUT(type="button", value="ДД.ММ.ГГГГ").input_cursor._size_mid.text-body
+        +b.input-with-title.__input-with-title
+          +e.H3.title.title-h3 date dropdown
+          +e.input-dropdown._size_short
+            +b.INPUT(type="button", value="ДД.ММ.ГГГГ").input_cursor._size_mid.text-body    

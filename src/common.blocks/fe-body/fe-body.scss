@@ -8,6 +8,9 @@
 
   @import "/src/common.blocks/fe-body/__input-with-title/fe-body__input-with-title.scss";
 
+  &__dropdown-container {
+    display: flex;
+  }
   
 }
 
@@ -22,6 +25,10 @@
   background-color: transparent;
   display: block;
 
+  &_size_short {
+    width: 150px;
+  }
+  
   &_cursor {
     cursor: pointer;
   }
@@ -68,6 +75,10 @@
       left: 285px;
       transform: translateY(-50%);
       pointer-events: none;
+    }
+
+    &_size_mid::after {
+      left: 115px;
     }
   }
 }
