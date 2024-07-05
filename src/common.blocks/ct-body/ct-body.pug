@@ -1,39 +1,42 @@
+include /src/common.blocks/logo-colorless/logo-colorless
+include /src/common.blocks/color-block/color-block
+
 +b.ct-body
-      include /src/common.blocks/logo-colorless/logo-colorless
+      +logo-colorless().__logo-colorless
       +e.container
         +e.colors-kit
           +e.color-cont
-            +e.color-block_color_dark-shade-100._shadow
+            +color-block({color: "dark-shade-100", isShadow: true})
             +e.type-block
               +e.P.title Dark Shade 100%
               +e.P.subtitle #1F2041
           +e.color-cont
-            +e.color-block_color_dark-shade-75
+            +color-block({color: "dark-shade-75", isShadow: false})
             +e.type-block
               +e.P.title Dark Shade 75%
               +e.P.subtitle #1F2041
           +e.color-cont
-            +e.color-block_color_dark-shade-50
+            +color-block({color: "dark-shade-50", isShadow: false})
             +e.type-block
               +e.P.title Dark Shade 50%
               +e.P.subtitle #1F2041
           +e.color-cont
-            +e.color-block_color_dark-shade-25
+            +color-block({color: "dark-shade-25", isShadow: false})
             +e.type-block
               +e.P.title Dark Shade 25%
               +e.P.subtitle #1F2041
           +e.color-cont
-            +e.color-block_color_dark-shade-5
+            +color-block({color: "dark-shade-5", isShadow: false})
             +e.type-block
               +e.P.title Dark Shade 5%
               +e.P.subtitle #1F2041
           +e.color-cont
-            +e.color-block_color_purple
+            +color-block({color: "purple", isShadow: false})
             +e.type-block
               +e.P.title Purple
               +e.P.subtitle #BC9CFF
           +e.color-cont
-            +e.color-block_color_green
+            +color-block({color: "green", isShadow: false})
             +e.type-block
               +e.P.title Green
               +e.P.subtitle #6FCF97

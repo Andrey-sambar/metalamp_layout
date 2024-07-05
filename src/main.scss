@@ -1,22 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @import "fonts.scss";
-@import "./components/color-palette/color-palette.scss";
-@import "./components/colors-type-container/colors-type-container.scss";
+@import "/src/variables.scss";
+@import "/src/common.blocks/logo-colorless/logo-colorless.scss";
+@import "/src/common.blocks/color-block/color-block.scss";
+
+
 
 body {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-style: normal;
+  //font-family: 'Montserrat';
+  //font-weight: 400;
+  //font-style: normal;
+  font: $custom-font-body
 }
 
-h1 {
-    color: red;
-}
+// -----------------------------------------------
 
-img {
-    width: 200px;
-}
+@import "/src/common.blocks/ct-body/ct-body.scss";
+@import "/src/common.blocks/fe-body/fe-body.scss";
+@import "/src/common.blocks/title-h3/title-h3.scss";
+@import "/src/common.blocks/text-body/text-body.scss";

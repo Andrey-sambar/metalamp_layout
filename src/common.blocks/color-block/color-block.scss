@@ -1,0 +1,21 @@
+.color-block {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+
+  @import "/src/common.blocks/color-block/_color_dark-shade-100/color-block_color_dark-shade-100.scss";
+
+  @import "/src/common.blocks/color-block/_color_dark-shade-75/color-block_color_dark-shade-75.scss";
+
+  @import "/src/common.blocks/color-block/_color_dark-shade-50/color-block_color_dark-shade-50.scss";
+
+  @import "/src/common.blocks/color-block/_color_dark-shade-25/color-block_color_dark-shade-25.scss";
+
+  @import "/src/common.blocks/color-block/_color_dark-shade-5/color-block_color_dark-shade-5.scss";
+
+  @import "/src/common.blocks/color-block/_color_purple/color-block_color_purple.scss";
+
+  @import "/src/common.blocks/color-block/_color_green/color-block_color_green.scss";
+
+  @import "/src/common.blocks/color-block/_shadow/color-block_shadow.scss";
+}

@@ -16,6 +16,7 @@ module.exports = {
         // define many page templates here
         index: 'src/index.pug', // => dist/index.html
         colors_type: 'src/colors-type.pug',
+        form_elements: 'src/form-elements.pug',
       },
       js: {
         // JS output filename

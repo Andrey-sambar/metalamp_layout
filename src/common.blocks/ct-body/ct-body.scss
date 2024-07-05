@@ -6,7 +6,7 @@
 
   @import "/src/common.blocks/ct-body/__color-cont/ct-body__color-cont.scss";
 
-  @import "/src/common.blocks/ct-body/__color-block/ct-body__color-block.scss";
+  // @import "/src/common.blocks/ct-body/__color-block/ct-body__color-block.scss";
 
   @import "/src/common.blocks/ct-body/__type-block/ct-body__type-block.scss";
 
@@ -29,4 +29,6 @@
   @import "/src/common.blocks/ct-body/__tag/ct-body__tag.scss";
 
   @import "/src/common.blocks/ct-body/__text/ct-body__text.scss";
+
+  @import "/src/common.blocks/ct-body/__logo-colorless/ct-body__logo-colorless.scss";
 }
