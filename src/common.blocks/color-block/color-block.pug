@@ -1,0 +1,22 @@
+mixin color-block(options)
+  - var colorClass = "color-block "
+  
+  case options.color
+    when "dark-shade-100"
+      - colorClass += "color-block_color_dark-shade-100";
+    when "dark-shade-75"
+      - colorClass += "color-block_color_dark-shade-75";
+    when "dark-shade-50"
+      - colorClass += "color-block_color_dark-shade-50";
+    when "dark-shade-25"
+      - colorClass += "color-block_color_dark-shade-25";
+    when "dark-shade-5"
+      - colorClass += "color-block_color_dark-shade-5";
+    when "purple"
+      - colorClass += "color-block_color_purple";
+    when "green"
+      - colorClass += "color-block_color_green";
+    
+  - colorClass += options.isShadow ? " color-block_shadow" : ""
+
+  div(class = colorClass)
