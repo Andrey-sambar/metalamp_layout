@@ -1,45 +1,19 @@
 include /src/common.blocks/logo-colorless/logo-colorless
 include /src/common.blocks/color-block/color-block
+include /src/common.blocks/color-cont/color-cont
+
 
 +b.ct-body
       +logo-colorless().__logo-colorless
       +e.container
         +e.colors-kit
-          +e.color-cont
-            +color-block({color: "dark-shade-100", isShadow: true})
-            +e.type-block
-              +e.P.title Dark Shade 100%
-              +e.P.subtitle #1F2041
-          +e.color-cont
-            +color-block({color: "dark-shade-75", isShadow: false})
-            +e.type-block
-              +e.P.title Dark Shade 75%
-              +e.P.subtitle #1F2041
-          +e.color-cont
-            +color-block({color: "dark-shade-50", isShadow: false})
-            +e.type-block
-              +e.P.title Dark Shade 50%
-              +e.P.subtitle #1F2041
-          +e.color-cont
-            +color-block({color: "dark-shade-25", isShadow: false})
-            +e.type-block
-              +e.P.title Dark Shade 25%
-              +e.P.subtitle #1F2041
-          +e.color-cont
-            +color-block({color: "dark-shade-5", isShadow: false})
-            +e.type-block
-              +e.P.title Dark Shade 5%
-              +e.P.subtitle #1F2041
-          +e.color-cont
-            +color-block({color: "purple", isShadow: false})
-            +e.type-block
-              +e.P.title Purple
-              +e.P.subtitle #BC9CFF
-          +e.color-cont
-            +color-block({color: "green", isShadow: false})
-            +e.type-block
-              +e.P.title Green
-              +e.P.subtitle #6FCF97
+          +color-cont({title: "Dark Shade 100%", subtitle: "#1F2041"}, {color: "dark-shade-100", isShadow: true})
+          +color-cont({title: "Dark Shade 75%", subtitle: "#1F2041"}, {color: "dark-shade-75", isShadow: false})
+          +color-cont({title: "Dark Shade 50%", subtitle: "#1F2041"}, {color: "dark-shade-50", isShadow: false})
+          +color-cont({title: "Dark Shade 25%", subtitle: "#1F2041"}, {color: "dark-shade-25", isShadow: false})
+          +color-cont({title: "Dark Shade 5%", subtitle: "#1F2041"}, {color: "dark-shade-5", isShadow: false})
+          +color-cont({title: "Purple", subtitle: "#BC9CFF"}, {color: "purple", isShadow: false})
+          +color-cont({title: "Green", subtitle: "#6FCF97"}, {color: "green", isShadow: false})
         +e.types-kit
           +e.title-block
             +e.P.tag.__text-size-h1 H1

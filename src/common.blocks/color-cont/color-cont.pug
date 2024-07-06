@@ -1,0 +1,8 @@
+include /src/common.blocks/color-block/color-block
+
+mixin color-cont(options, colorBlock)
+  .color-cont
+    +color-block(colorBlock)
+    .color-cont__type-block
+      p.color-cont__title= options.title
+      p.color-cont__subtitle= options.subtitle
