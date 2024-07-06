@@ -1,10 +1,11 @@
-include /src/common.blocks/logo-colorless/logo-colorless
+include /src/common.blocks/logo/logo
 include /src/common.blocks/color-block/color-block
 include /src/common.blocks/color-cont/color-cont
 
 
 +b.ct-body
-      +logo-colorless().__logo-colorless
+      +e.logo-colorless
+        +logo()
       +e.container
         +e.colors-kit
           +color-cont({title: "Dark Shade 100%", subtitle: "#1F2041"}, {color: "dark-shade-100", isShadow: true})
