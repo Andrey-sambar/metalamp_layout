@@ -1,0 +1,6 @@
+mixin input-field(options)
+  - var className = "input-field";
+  - className += options.isShadow ? " input-field_shadow" : ""
+  - className += options.isShort ? " input-field_short" : ""
+  if options.type == "text"
+    input(class = className, type = "text", placeholder = options.placeholder ? options.placeholder : "")

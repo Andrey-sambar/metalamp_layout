@@ -1,0 +1,40 @@
+&__input {
+  border: 1px solid $custom-color-dark-shade-25;
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+  margin-top: 5px;
+  text-indent: 15px;
+  text-align: left;
+  background-color: transparent;
+  display: block;
+
+  &_size_short {
+    width: 150px;
+  }
+
+  &_size_midle {
+    width: 266px;
+  }
+  
+  &_cursor {
+    cursor: pointer;
+  }
+
+  &:hover {
+    border: 1px solid $custom-color-dark-shade-50;
+  }
+
+  &:focus {
+    border: 1px solid $custom-color-dark-shade-50;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $custom-color-dark-shade-25;
+  }
+
+  &__hover {
+    border: 1px solid $custom-color-dark-shade-50;
+  }
+}

@@ -1,0 +1,17 @@
+.input-field {
+  @include text-body;
+  border: 1px solid $custom-color-dark-shade-25;
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+  padding-left: 15px;
+  //margin-top: 5px;
+  //text-indent: 15px;
+  //text-align: left;
+  background-color: transparent;
+  display: block;
+
+  @import "/src/common.blocks/input-field/_short/input-field_short.scss";
+  @import "/src/common.blocks/input-field/_shadow/input-field_shadow.scss";
+  
+}

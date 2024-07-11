@@ -11,3 +11,13 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@mixin text-body {
+  font: $custom-font-body;
+  color: $custom-color-dark-shade-75;
+}
+
+@mixin text-body-gray {
+  @include text-body;
+  color: $custom-color-dark-shade-25;
+}
