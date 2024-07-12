@@ -21,3 +21,9 @@
   @include text-body;
   color: $custom-color-dark-shade-25;
 }
+
+@mixin title-h3 {
+  font: $custom-font-h3;
+  color: $custom-color-dark-shade-100;
+  text-transform: uppercase;
+}
