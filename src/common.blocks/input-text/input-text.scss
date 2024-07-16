@@ -1,0 +1,42 @@
+@import "/src/common.blocks/text-body/text-body.scss";
+@import "/src/common.blocks/title-h3/title-h3.scss";
+//@import "/src/common.blocks/input-text/__input-with-title-cont/input-text__input-with-title-cont.scss";
+
+.input-text {
+
+  @import "/src/common.blocks/input-text/__input/input-text__input.scss";
+}
+
+
+.input-with-title {
+  
+
+  &__title {
+    font: $custom-font-h3;
+  }
+  
+  &__input-dropdown {
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url('/img/expand_more.svg');
+     // background-color: red;
+      width: 24px;
+      height: 24px;
+      top: 50%;
+      left: 285px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    &_size_short::after {
+      left: 115px;
+    }
+
+    &_size_midle::after {
+      left: 231px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.color-cont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @import "/src/common.blocks/color-cont/__type-block/color-cont__type-block.scss";
+  @import "/src/common.blocks/color-cont/__title/color-cont__title.scss";
+  @import "/src/common.blocks/color-cont/__subtitle/color-cont__subtitle.scss";
+}

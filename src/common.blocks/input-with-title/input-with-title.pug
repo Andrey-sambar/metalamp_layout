@@ -1,0 +1,14 @@
+include /src/common.blocks/input-field/input-field
+
+mixin input-with-title(options)
+  .input-with-title__container 
+    .input-with-title__title= options.title ? options.title : "default"
+    case options.type
+      when "text"
+        +input-field({type: "text", 
+                    placeholder: options.placeholder, 
+                    isShadow: options.isShadow, 
+                    value: options.value, 
+                    isHover: options.isHover})
+      when "dropdown"
+        +dropdown({value: options.value})
