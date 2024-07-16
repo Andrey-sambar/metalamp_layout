@@ -2,6 +2,7 @@ include /src/common.blocks/logo/logo
 include /src/common.blocks/input-text/input-text
 include /src/common.blocks/input-field/input-field
 include /src/common.blocks/input-with-title/input-with-title
+include /src/common.blocks/dropdown/dropdown
 
 +b.fe-body
   +e.container 
@@ -9,7 +10,8 @@ include /src/common.blocks/input-with-title/input-with-title
       +e.logo-colorless
         +logo()
       +input-with-title({type: "text", placeholder: "Email", isShadow: true})
-      +input-with-title({type: "text", value: "This is pretty awesome", isHover: true})
+      +e.container-short
+        +input-with-title({type: "text", value: "This is pretty awesome", isHover: true})
       //+input-text({type: "email", placeholder: "email", title: "text field"})
       +b.input-with-title.__input-with-title
         +e.H3.title.title-h3 Text Field
