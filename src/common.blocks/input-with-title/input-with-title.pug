@@ -9,6 +9,7 @@ mixin input-with-title(options)
                     placeholder: options.placeholder, 
                     isShadow: options.isShadow, 
                     value: options.value, 
-                    isHover: options.isHover})
+                    isHover: options.isHover,
+                    isMasked: options.isMasked})
       when "dropdown"
         +dropdown({value: options.value})

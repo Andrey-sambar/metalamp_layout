@@ -3,6 +3,7 @@ mixin input-field(options)
   - className += options.isShadow ? " input-field_shadow" : ""
   - className += options.isShort ? " input-field_short" : ""
   - className += options.isHover ? " input-field_hover" : ""
+  - className += options.isMasked ? " input-field_masked" : ""
   if options.type == "text"
     input(
       class = className 
