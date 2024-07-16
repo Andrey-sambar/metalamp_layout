@@ -9,10 +9,12 @@ include /src/common.blocks/dropdown/dropdown
     +e.column1
       +e.logo-colorless
         +logo()
-      +input-with-title({type: "text", placeholder: "Email", isShadow: true})
+      +input-with-title({type: "text", placeholder: "Email", title: "text field", isShadow: true})
       +e.container-short
-        +input-with-title({type: "text", value: "This is pretty awesome", isHover: true})
+        +input-with-title({type: "text", value: "This is pretty awesome", title: "text field", isHover: true})
       //+input-text({type: "email", placeholder: "email", title: "text field"})
+      +e.container-short
+        +input-with-title({type: "dropdown", value: "Сколько гостей", title: "dropdown"})
       +b.input-with-title.__input-with-title
         +e.H3.title.title-h3 Text Field
         +b.INPUT(type="text", value="This is pretty awesome").input.text-body.input__hover
