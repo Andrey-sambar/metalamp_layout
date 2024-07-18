@@ -1,3 +1,6 @@
 mixin dropdown(options)
   .dropdown__container
-    button.dropdown= options.value
+    if options.size == "short"
+      button.dropdown(class=" dropdown_size_short")= options.value
+    else
+      button.dropdown= options.value

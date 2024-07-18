@@ -1,1 +1,1 @@
-import '../input-field/_masked/input-field_masked';
+import '../input-field/_masked/input-field_masked.js';

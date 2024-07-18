@@ -27,6 +27,7 @@
     transform: translateY(-50%);
     pointer-events: none;
   }
-
+  
+  @import "/src/common.blocks/dropdown/_size_short/dropdown_size_short.scss";
   //@import "/src/common.blocks/dropdown/__container/dropdown__container.scss";
 }
