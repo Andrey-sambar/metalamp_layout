@@ -4,10 +4,12 @@ mixin input-field(options)
   - className += options.isShort ? " input-field_short" : ""
   - className += options.isHover ? " input-field_hover" : ""
   - className += options.isMasked ? " input-field_masked" : ""
-  if options.type == "text"
-    input(
-      class = className 
-      type = "text"
-      placeholder = options.placeholder ? options.placeholder : ""
-      value = options.value ? options.value : ""
-    )
+  case options.type
+      when "text"
+      when "email"
+        input(
+          class = className 
+          type = options.type
+          placeholder = options.placeholder ? options.placeholder : ""
+          value = options.value ? options.value : ""
+        )

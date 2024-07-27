@@ -9,7 +9,7 @@ include /src/common.blocks/dropdown/dropdown
     +e.column1
       +e.logo-colorless
         +logo()
-      +input-with-title({type: "text", placeholder: "Email", title: "text field", isShadow: true})
+      +input-with-title({type: "email", placeholder: "Email", title: "text field", isShadow: true})
       +e.container-short
         +input-with-title({type: "text", value: "This is pretty awesome", title: "text field", isHover: true})
       +e.container-short
@@ -21,3 +21,5 @@ include /src/common.blocks/dropdown/dropdown
         +input-with-title({type: "dropdown", value: "19.08.2019", title: "date dropdown", size: "short"})
       +e.container-short
         +input-with-title({type: "dropdown", value: "19 авг - 23 авг", title: "filter date dropdown", size: "medium"})
+      +e.container-short
+        +input-with-title({type: "email", placeholder: "Email", title: "subscription text field", isShort: true})
