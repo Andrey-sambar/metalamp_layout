@@ -15,6 +15,7 @@ mixin input-with-title(options)
                     value: options.value, 
                     isHover: options.isHover,
                     isShort: options.isShort,
-                    isMasked: options.isMasked})
+                    isMasked: options.isMasked,
+                    isArrow: options.isArrow})
       when "dropdown"
         +dropdown({value: options.value, size: options.size})

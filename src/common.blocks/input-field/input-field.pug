@@ -1,15 +1,18 @@
 mixin input-field(options)
   - var className = "input-field";
+  - var container = "input-field__container"
   - className += options.isShadow ? " input-field_shadow" : ""
   - className += options.isShort ? " input-field_short" : ""
   - className += options.isHover ? " input-field_hover" : ""
   - className += options.isMasked ? " input-field_masked" : ""
+  - container += options.isArrow && options.isShort ? " input-field__container_arrow" : ""
   case options.type
       when "text"
       when "email"
-        input(
-          class = className 
-          type = options.type
-          placeholder = options.placeholder ? options.placeholder : ""
-          value = options.value ? options.value : ""
-        )
+        div(class= container)
+          input(
+            class = className 
+            type = options.type
+            placeholder = options.placeholder ? options.placeholder : ""
+            value = options.value ? options.value : ""
+          )

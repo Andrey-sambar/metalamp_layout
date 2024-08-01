@@ -10,6 +10,7 @@
   //text-align: left;
   background-color: transparent;
   display: block;
+  
 
   &:focus {
     border: 1px solid $custom-color-dark-shade-50;
@@ -27,5 +28,6 @@
   @import "/src/common.blocks/input-field/_short/input-field_short.scss";
   @import "/src/common.blocks/input-field/_shadow/input-field_shadow.scss";
   @import "/src/common.blocks/input-field/_hover/input-field_hover.scss";
+  @import "/src/common.blocks/input-field/__container/input-field__container.scss";
   
 }

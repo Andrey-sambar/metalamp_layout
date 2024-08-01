@@ -1,0 +1,13 @@
+&_arrow::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  //background-color: red;
+  background-image: url('./arrow_forward.svg');
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  //pointer-events: none;
+  cursor: pointer;
+}
