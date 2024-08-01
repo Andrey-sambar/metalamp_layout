@@ -1,6 +1,10 @@
 .input-with-title {
   margin-top: 19px;
+  
 
   @import "/src/common.blocks/input-with-title/__container/input-with-title__container.scss";
   @import "/src/common.blocks/input-with-title/__title/input-with-title__title.scss";
+  @import "/src/common.blocks/input-with-title/__titles/input-with-title__titles.scss";
+
+  
 }

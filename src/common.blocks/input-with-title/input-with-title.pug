@@ -1,8 +1,11 @@
 include /src/common.blocks/input-field/input-field
 
 mixin input-with-title(options)
-  .input-with-title__container 
-    .input-with-title__title= options.title ? options.title : "default"
+  .input-with-title__container
+    .input-with-title__titles 
+      .input-with-title__title= options.title ? options.title : "default"
+      if !options.isShort && options.type!= "dropdown" && options.subtitle
+        .input-with-title__title= options.title ? options.title : "default"
     case options.type
       when "text"
       when "email"
