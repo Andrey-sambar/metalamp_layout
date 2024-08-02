@@ -2,20 +2,29 @@ include /src/common.blocks/input-field/input-field
 
 mixin input-with-title(options)
   .input-with-title__container
-    .input-with-title__titles 
-      .input-with-title__title= options.title ? options.title : "default"
-      if !options.isShort && options.type!= "dropdown" && options.subtitle
-        .input-with-title__title= options.title ? options.title : "default"
+    case options.size 
+      when "medium"
+        .input-with-title__titles.input-with-title__titles_size_medium
+          .input-with-title__title= options.title ? options.title : "default"
+          .input-with-title__subtitle= options.subtitle ? options.subtitle : ""
+      when "short"
+        .input-with-title__titles.input-with-title__titles_size_short
+          .input-with-title__title= options.title ? options.title : "default"
+          .input-with-title__subtitle= options.subtitle ? options.subtitle : "" 
+      default
+        .input-with-title__titles
+          .input-with-title__title= options.title ? options.title : "default"
+          .input-with-title__subtitle= options.subtitle ? options.subtitle : ""
     case options.type
       when "text"
       when "email"
         +input-field({type: options.type, 
-                    placeholder: options.placeholder, 
-                    isShadow: options.isShadow, 
-                    value: options.value, 
-                    isHover: options.isHover,
-                    isShort: options.isShort,
-                    isMasked: options.isMasked,
-                    isArrow: options.isArrow})
+                      placeholder: options.placeholder, 
+                      isShadow: options.isShadow, 
+                      value: options.value, 
+                      isHover: options.isHover,
+                      isShort: options.isShort,
+                      isMasked: options.isMasked,
+                      isArrow: options.isArrow})
       when "dropdown"
         +dropdown({value: options.value, size: options.size})

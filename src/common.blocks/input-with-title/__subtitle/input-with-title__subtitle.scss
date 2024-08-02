@@ -1,0 +1,6 @@
+&__subtitle {
+  @include title-h3;
+  color: $custom-color-dark-shade-50;
+  font-weight: 400;
+  margin-bottom: 5px;
+}

@@ -2,4 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 320px;
+
+  @import "/src/common.blocks/input-with-title/__titles/_size_medium/input-with-title__titles_size_medium.scss";
+  @import "/src/common.blocks/input-with-title/__titles/_size_short/input-with-title__titles_size_short.scss";
 }
