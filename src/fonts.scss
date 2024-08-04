@@ -27,3 +27,9 @@
   color: $custom-color-dark-shade-100;
   text-transform: uppercase;
 }
+
+@mixin dropdown-symbols {
+  font: $custom-font-body;
+  font-size: 18px;
+  color: $custom-color-dark-shade-50;
+}

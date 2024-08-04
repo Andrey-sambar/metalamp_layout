@@ -1,14 +1,21 @@
 mixin dropdown(options)
   - var buttonClass = "dropdown__button-field"
+  - var listClass = "dropdown__dropdown-list"
   - buttonClass += (options.size== "short") ? " dropdown__button-field_size_short" : ""
   - buttonClass += (options.size== "medium") ? " dropdown__button-field_size_medium" : ""
   - buttonClass += options.isExpanded ? " dropdown__button-field_expanded" : ""
+  - listClass += options.isExpanded ? " dropdown__dropdown-list_expanded" : ""
   
   .dropdown
-      button(class= buttonClass)= options.value
-
-    
-  if options.isExpanded
-    ul.dropdown__dropdown-list(class=" dropdown__dropdown-list_expanded")
-      each val in options.list
-        li.dropdown__dropdown-item= val
+    button(class= buttonClass)= options.value
+    ul(class= listClass)
+      if options.isExpanded
+        each val in options.list
+          li.dropdown__dropdown-item
+            .text= val
+            .count-cont
+              .dropdown__circle
+                span.dropdown__circle-symbol= '-'
+              .count 
+              .dropdown__circle
+                span.dropdown__circle-symbol= '+'

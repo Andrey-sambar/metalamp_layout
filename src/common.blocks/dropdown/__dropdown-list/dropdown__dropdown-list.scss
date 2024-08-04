@@ -1,8 +1,10 @@
 &__dropdown-list {
   position: absolute;
-  display: block;
+  display: none;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+
+  @import "/src/common.blocks/dropdown/__dropdown-list/_expanded/dropdown__dropdown-list_expanded.scss";
 
 }

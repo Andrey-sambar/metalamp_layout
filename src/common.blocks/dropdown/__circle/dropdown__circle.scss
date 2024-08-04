@@ -1,0 +1,13 @@
+&__circle {
+
+  @include dropdown-symbols;
+
+  position: relative;
+
+  width: 30px;
+  height: 30px;
+  
+  border-radius: 15px;
+  border: 1px solid $custom-color-dark-shade-25; 
+  
+}
