@@ -1,16 +1,13 @@
 mixin dropdown(options)
-  //- var buttonClass = "dropdown__button-field"
-  //- className += (options.isShadow== "short") ? " dropdown__button-field_size_short" : ""
+  - var buttonClass = "dropdown__button-field"
+  - buttonClass += (options.size== "short") ? " dropdown__button-field_size_short" : ""
+  - buttonClass += (options.size== "medium") ? " dropdown__button-field_size_medium" : ""
+  
   .dropdown
-    if options.size == "short"
-      button.dropdown__button-field(class=" dropdown__button-field_size_short")= options.value
-    else if options.size == "medium"
-      button.dropdown__button-field(class=" dropdown__button-field_size_medium")= options.value
-    else 
-      button.dropdown__button-field= options.value
+      button(class= buttonClass)= options.value
 
     
-    if options.isExpanded
-      ul.dropdown__dropdown-list(class=" dropdown__dropdown-list_expanded")
-        each val in options.list
-          li.dropdown__dropdown-item= val
+  if options.isExpanded
+    ul.dropdown__dropdown-list(class=" dropdown__dropdown-list_expanded")
+      each val in options.list
+        li.dropdown__dropdown-item= val
