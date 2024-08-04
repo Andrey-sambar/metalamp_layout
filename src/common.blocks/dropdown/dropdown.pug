@@ -1,11 +1,13 @@
 mixin dropdown(options)
-  .dropdown__container
+  //- var buttonClass = "dropdown__button-field"
+  //- className += (options.isShadow== "short") ? " dropdown__button-field_size_short" : ""
+  .dropdown
     if options.size == "short"
-      button.dropdown(class=" dropdown_size_short")= options.value
+      button.dropdown__button-field(class=" dropdown__button-field_size_short")= options.value
     else if options.size == "medium"
-      button.dropdown(class=" dropdown_size_medium")= options.value
+      button.dropdown__button-field(class=" dropdown__button-field_size_medium")= options.value
     else 
-      button.dropdown= options.value
+      button.dropdown__button-field= options.value
 
     
     if options.isExpanded
