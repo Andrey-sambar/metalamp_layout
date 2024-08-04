@@ -2,6 +2,7 @@ mixin dropdown(options)
   - var buttonClass = "dropdown__button-field"
   - buttonClass += (options.size== "short") ? " dropdown__button-field_size_short" : ""
   - buttonClass += (options.size== "medium") ? " dropdown__button-field_size_medium" : ""
+  - buttonClass += options.isExpanded ? " dropdown__button-field_expanded" : ""
   
   .dropdown
       button(class= buttonClass)= options.value
