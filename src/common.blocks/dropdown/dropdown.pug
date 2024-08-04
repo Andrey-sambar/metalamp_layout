@@ -4,5 +4,11 @@ mixin dropdown(options)
       button.dropdown(class=" dropdown_size_short")= options.value
     else if options.size == "medium"
       button.dropdown(class=" dropdown_size_medium")= options.value
-    else
+    else 
       button.dropdown= options.value
+
+    
+    if options.isExpanded
+      ul.dropdown__dropdown-list(class=" dropdown__dropdown-list_expanded")
+        each val in options.list
+          li.dropdown__dropdown-item= val
