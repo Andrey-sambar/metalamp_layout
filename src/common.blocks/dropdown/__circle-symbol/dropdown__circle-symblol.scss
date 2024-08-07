@@ -1,5 +1,7 @@
 &__circle-symbol {
 
+  @include dropdown-symbols;
+
   position: absolute;
 
   top: 50%;
