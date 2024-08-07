@@ -3,11 +3,16 @@
   margin: 0px;
   padding: 0px;
 
-  width: 249px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 244px;
 
   padding-left: 15px;
   padding-top: 11px;
   padding-bottom: 11px;
+  padding-right: 5px;
   line-height: 20px;
 
   border: 1px solid $custom-color-dark-shade-50;
