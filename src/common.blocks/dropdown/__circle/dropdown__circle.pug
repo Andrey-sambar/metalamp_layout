@@ -1,0 +1,9 @@
+mixin circle(options)
+
+  .dropdown__circle
+
+    case options.symbol 
+      when "minus"
+        span.dropdown__circle-symbol= '-'
+      when "plus"
+        span.dropdown__circle-symbol= '+'

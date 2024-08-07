@@ -1,3 +1,5 @@
+include /src/common.blocks/dropdown/__circle/dropdown__circle
+
 mixin dropdown(options)
   - var buttonClass = "dropdown__button-field"
   - var listClass = "dropdown__dropdown-list"
@@ -14,8 +16,6 @@ mixin dropdown(options)
           li.dropdown__dropdown-item
             .text= key
             .dropdown__count-container
-              .dropdown__circle
-                span.dropdown__circle-symbol= '-'
+              +circle({symbol: "minus"})
               .count= val
-              .dropdown__circle
-                span.dropdown__circle-symbol= '+'
+              +circle({symbol: "plus"})
