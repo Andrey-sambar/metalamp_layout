@@ -10,12 +10,12 @@ mixin dropdown(options)
     button(class= buttonClass)= options.value
     ul(class= listClass)
       if options.isExpanded
-        each val in options.list
+        each val, key in options.list
           li.dropdown__dropdown-item
-            .text= val
+            .text= key
             .dropdown__count-container
               .dropdown__circle
                 span.dropdown__circle-symbol= '-'
-              .count 2
+              .count= val
               .dropdown__circle
                 span.dropdown__circle-symbol= '+'
