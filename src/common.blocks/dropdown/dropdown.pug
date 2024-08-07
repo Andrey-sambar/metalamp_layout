@@ -16,6 +16,9 @@ mixin dropdown(options)
           li.dropdown__dropdown-item
             .text= key
             .dropdown__count-container
-              +circle({symbol: "minus"})
+              if val == 0
+                +circle({symbol: "minus", isDisabled: true})
+              else 
+                +circle({symbol: "minus"})
               .count= val
               +circle({symbol: "plus"})

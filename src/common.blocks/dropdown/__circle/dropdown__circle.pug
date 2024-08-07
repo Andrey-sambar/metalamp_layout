@@ -1,6 +1,8 @@
 mixin circle(options)
+  - var className = "dropdown__circle"
+  - className += options.isDisabled ? " dropdown__circle_disabled" : ""
 
-  .dropdown__circle
+  div(class= className)
 
     case options.symbol 
       when "minus"

@@ -11,4 +11,6 @@
   border: 1px solid $custom-color-dark-shade-25; 
   
   cursor: pointer;
+
+  @import "/src/common.blocks/dropdown/__circle/_disabled/dropdown__circle_disabled.scss";
 }
