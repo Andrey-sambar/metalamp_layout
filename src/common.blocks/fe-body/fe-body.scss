@@ -1,13 +1,12 @@
 .fe-body {
   
-  // margin: 100px 20px;
   @import "/src/common.blocks/fe-body/__logo-colorless/fe-body__logo-colorless.scss";
 
   &__container {
+    display: flex;
+    justify-content: space-between;
     margin: 143px 140px;
   }
-
-  //@import "/src/common.blocks/fe-body/__input-with-title/fe-body__input-with-title.scss";
 
   &__dropdown-container {
     display: flex;

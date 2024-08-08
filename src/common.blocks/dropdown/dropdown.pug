@@ -3,17 +3,19 @@ include /src/common.blocks/dropdown/__circle/dropdown__circle
 mixin dropdown(options)
   - var buttonClass = "dropdown__button-field"
   - var listClass = "dropdown__dropdown-list"
+  - var itemClass = "dropdown__dropdown-item"
   - buttonClass += (options.size== "short") ? " dropdown__button-field_size_short" : ""
   - buttonClass += (options.size== "medium") ? " dropdown__button-field_size_medium" : ""
   - buttonClass += options.isExpanded ? " dropdown__button-field_expanded" : ""
   - listClass += options.isExpanded ? " dropdown__dropdown-list_expanded" : ""
+  - itemClass += (options.size== "medium") ? " dropdown__dropdown-item_medium" : ""
   
   .dropdown
     button(class= buttonClass)= options.value
     ul(class= listClass)
       if options.isExpanded
         each val, key in options.list
-          li.dropdown__dropdown-item
+          li(class= itemClass)
             .text= key
             .dropdown__count-container
               if val == 0
