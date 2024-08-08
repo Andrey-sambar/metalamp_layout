@@ -1,11 +1,13 @@
 mixin circle(options)
-  - var className = "dropdown__circle"
-  - className += options.isDisabled ? " dropdown__circle_disabled" : ""
+  - var circleClass = "dropdown__circle"
+  - var symbolClass = "dropdown__circle-symbol"
+  - circleClass += options.isDisabled ? " dropdown__circle_disabled" : ""
+  - symbolClass += options.isDisabled ? " dropdown__circle-symbol_disabled" : ""
 
-  div(class= className)
+  div(class= circleClass)
 
     case options.symbol 
       when "minus"
-        span.dropdown__circle-symbol= '-'
+        span(class= symbolClass)= '-'
       when "plus"
-        span.dropdown__circle-symbol= '+'
+        span(class= symbolClass)= '+'

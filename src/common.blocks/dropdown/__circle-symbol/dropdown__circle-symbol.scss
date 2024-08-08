@@ -10,4 +10,6 @@
   transform: translate(-50%, -50%);
 
   pointer-events: none;
+
+  @import "/src/common.blocks/dropdown/__circle-symbol/_disabled/dropdown__circle-symbol_disabled.scss";
 }
