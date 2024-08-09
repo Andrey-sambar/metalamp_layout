@@ -4,6 +4,7 @@ include /src/common.blocks/input-field/input-field
 include /src/common.blocks/input-with-title/input-with-title
 include /src/common.blocks/dropdown/dropdown
 include /src/common.blocks/checkbox-button/checkbox-button
+include /src/common.blocks/checkbox-list/checkbox-list
 
 +b.fe-body
   +e.container
@@ -36,6 +37,8 @@ include /src/common.blocks/checkbox-button/checkbox-button
         +input-with-title({type: "dropdown", value: "2 спальни,2 кровати...", title: "dropdown", subtitle: "default", size: "medium"})
       +e.container-short
         +input-with-title({type: "dropdown", value: "2 спальни,2 кровати...", list: {"спальни": 2, "кровати": 2, "ванные комнаты": 0}, title: "dropdown", subtitle: "expanded", size: "medium", isExpanded: true})
+      +e.container-100
+        +checkbox-list({title: "expandable checkbox list"})  
     +e.column2
       +e.container-short
         +input-with-title({type: "dropdown", value: "Сколько гостей", list: {"взрослые": 0, "дети": 0, "младенцы": 0}, title: "dropdown", isExpanded: true, buttons: "both"})
