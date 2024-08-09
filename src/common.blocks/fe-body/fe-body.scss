@@ -8,10 +8,9 @@
     margin: 143px 140px;
   }
 
-  &__dropdown-container {
+  &__container-bottom {
     display: flex;
     justify-content: space-between;
-    width: 320px;
   }
 
   @import "/src/common.blocks/fe-body/__container-short/fe-body__container-short.scss";
@@ -23,3 +22,4 @@
 @import "/src/common.blocks/input-field/input-field.scss";
 @import "/src/common.blocks/input-with-title/input-with-title.scss";
 @import "/src/common.blocks/dropdown/dropdown.scss";
+@import "/src/common.blocks/checkbox-button/checkbox-button.scss";

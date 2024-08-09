@@ -1,0 +1,8 @@
+mixin checkbox-button(options)
+  - var checkboxClass = "checkbox-button__checkbox"
+  - checkboxClass += options.isChecked ? " checkbox-button__checkbox_checked" : ""
+  .checkbox-button
+    div(class= checkboxClass)
+      if options.isChecked
+        .checkbox-button__check
+    .checkbox-button__title= options.title

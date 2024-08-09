@@ -1,0 +1,11 @@
+&__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid $custom-color-dark-shade-25;
+
+  @import "/src/common.blocks/checkbox-button/__checkbox/_checked/checkbox-button__checkbox_checked.scss";
+}

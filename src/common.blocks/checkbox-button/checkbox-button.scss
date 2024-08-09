@@ -1,0 +1,7 @@
+.checkbox-button {
+  display: flex;
+
+  @import "/src/common.blocks/checkbox-button/__checkbox/checkbox-button__checkbox.scss";
+  @import "/src/common.blocks/checkbox-button/__check/checkbox-button__check.scss";
+  @import "/src/common.blocks/checkbox-button/__title/checkbox-button__title.scss";
+}
