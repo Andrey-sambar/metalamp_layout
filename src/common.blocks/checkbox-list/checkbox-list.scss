@@ -4,5 +4,14 @@
     margin-top: 10px;
   }
 
+  &__title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 266px;
+    margin-bottom: 17px;
+  }
+
   @import "/src/common.blocks/checkbox-list/__title/checkbox-list__title.scss";
+  @import "/src/common.blocks/checkbox-list/__arrow/checkbox-list__arrow.scss";
 }

@@ -2,7 +2,12 @@ include /src/common.blocks/checkbox-button/checkbox-button
 
 mixin checkbox-list(options)
   .checkbox-list
-    .checkbox-list__title= options.title
-    each val, key in options.list
-      .checkbox-list__checkbox-button
-        +checkbox-button({title: key, isChecked: val})
+    .checkbox-list__title-container
+      .checkbox-list__title= options.title
+      if options.isCanExpand
+        .checkbox-list__arrow
+    if options.isExpanded
+      .checkbox-list_list
+      each val, key in options.list
+        .checkbox-list__checkbox-button
+          +checkbox-button({title: key, isChecked: val})
