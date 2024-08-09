@@ -1,4 +1,8 @@
 .checkbox-list {
 
+  &__checkbox-button {
+    margin-top: 10px;
+  }
+
   @import "/src/common.blocks/checkbox-list/__title/checkbox-list__title.scss";
 }

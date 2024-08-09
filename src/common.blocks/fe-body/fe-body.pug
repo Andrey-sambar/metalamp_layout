@@ -38,7 +38,7 @@ include /src/common.blocks/checkbox-list/checkbox-list
       +e.container-short
         +input-with-title({type: "dropdown", value: "2 спальни,2 кровати...", list: {"спальни": 2, "кровати": 2, "ванные комнаты": 0}, title: "dropdown", subtitle: "expanded", size: "medium", isExpanded: true})
       +e.container-100
-        +checkbox-list({title: "expandable checkbox list"})  
+        +checkbox-list({title: "expandable checkbox list", list: {"Завтрак": false, "Письменный стол": true, "Стул для кормления": true, "Кроватка": true, "Телевизор": false, "Шампунь": false}})  
     +e.column2
       +e.container-short
         +input-with-title({type: "dropdown", value: "Сколько гостей", list: {"взрослые": 0, "дети": 0, "младенцы": 0}, title: "dropdown", isExpanded: true, buttons: "both"})

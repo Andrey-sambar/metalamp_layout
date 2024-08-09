@@ -3,4 +3,6 @@ include /src/common.blocks/checkbox-button/checkbox-button
 mixin checkbox-list(options)
   .checkbox-list
     .checkbox-list__title= options.title
-    +checkbox-button({title: "Завтрак"})
+    each val, key in options.list
+      .checkbox-list__checkbox-button
+        +checkbox-button({title: key, isChecked: val})
