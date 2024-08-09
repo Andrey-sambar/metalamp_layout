@@ -24,3 +24,11 @@ mixin dropdown(options)
                 +circle({symbol: "minus"})
               .count= val
               +circle({symbol: "plus"})
+      case options.buttons
+        when "both"
+          li(class= itemClass)
+            span.dropdown__clean-button Очистить
+            span.dropdown__apply-button Применить
+        when "apply"
+          li(class= itemClass class= "dropdown__dropdown-item_apply-button")
+            span.dropdown__apply-button Применить

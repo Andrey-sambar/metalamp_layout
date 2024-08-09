@@ -1,0 +1,8 @@
+&__apply-button {
+  @include title-h3;
+  color: $custom-color-purple;
+
+  cursor: pointer;
+
+  padding-top: 14px;
+}
