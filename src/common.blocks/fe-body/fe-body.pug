@@ -26,10 +26,8 @@ include /src/common.blocks/checkbox-list/checkbox-list
       +e.container-short
         +input-with-title({type: "email", placeholder: "Email", title: "subscription text field", isShort: true, isArrow: true})
     +e.column2
-      +e.container-short 
-        +checkbox-button({title: "Можно курить"})
-      +e.container-short 
-        +checkbox-button({title: "Можно с питомцами", isChecked: true})
+      +e.checkbox-buttons-container 
+        +checkbox-list({title: "expandable checkbox list", list: {"Можно курить": false, "Можно с питомцами": true, "Можно пригласить гостей (до 10 человек)": true}, isExpanded: true})
     +e.column3
   +e.container
     +e.column1
